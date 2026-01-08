@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeyam Tours and Travels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f5f5f5;
+      color:#333;
+    }
+    header{
+      background:#f2c300; /* yellow */
+      color:#1b5e20; /* dark green */
+      padding:20px;
+    }
+    header .top{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    header h1{
+      margin:0;
+      font-size:28px;
+      color:#1b5e20;
+    }
+    header p{
+      margin:5px 0 0;
+      font-size:14px;
+    }
+    nav{
+      margin-top:15px;
+    }
+    nav a{
+      color:#1b5e20;
+      text-decoration:none;
+      margin-right:15px;
+      font-weight:bold;
+    }
+    nav a:hover{
+      text-decoration:underline;
+    }
+    .hero{
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
+    }
+    .hero h2{
+      font-size:36px;
+      margin-bottom:10px;
+    }
+    .hero p{
+      font-size:18px;
+    }
+    section{
+      padding:40px 20px;
+      max-width:1100px;
+      margin:auto;
+      background:#fff;
+      margin-top:20px;
+      border-radius:8px;
+    }
+    section h2{
+      text-align:center;
+      color:#1b5e20;
+      margin-bottom:30px;
+    }
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:#f9f9f9;
+      padding:20px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+    .card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:6px;
+      margin-bottom:10px;
+    }
+    .price{
+      color:#1b5e20;
+      font-weight:bold;
+      margin-top:8px;
+    }
+    .book-btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 14px;
+      background:#1b5e20;
+      color:#fff;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:14px;
+    }
+    .book-btn:hover{opacity:0.9;}
+    .card h3{
+      color:#0b6b3a;
+      margin-bottom:10px;
+    }
+    .contact{
+      text-align:center;
+      font-size:16px;
+    }
+    .contact p{
+      margin:8px 0;
+    }
+    footer{
+      background:#1b5e20;
+      color:#fff;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+      font-size:14px;
+    }
+    @media(max-width:600px){
+      header h1{font-size:22px;}
+      .hero h2{font-size:26px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <div style="display:flex;align-items:center;gap:15px;">
+      <img src="jeyam logo.jpg" alt="Jeyam Tours and Travels Logo" style="height:70px;width:auto;" />
+      <div>
+        <h1>Jeyam Tours and Travels</h1>
+        <p>Comfortable • Reliable • Affordable</p>
+      </div>
+    </div>
+    <div>
+      <p>📞 9500471717</p>
+      <p>✉️ info.jeyamtravels@gmail.com</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#packages">Tour Packages</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h2>Your Trusted Travel Partner</h2>
+  <p>Safe & comfortable cab services for all your travel needs</p>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Local Cab Services</h3>
+      <p>Point-to-point and hourly rental services within the city.</p>
+    </div>
+    <div class="card">
+      <h3>Outstation Trips</h3>
+      <p>Comfortable long-distance travel with experienced drivers.</p>
+    </div>
+    <div class="card">
+      <h3>Airport Transfers</h3>
+      <p>On-time pickup and drop services for hassle-free travel.</p>
+    </div>
+    <div class="card">
+      <h3>Tour Packages</h3>
+      <p>Customized tour packages for families, groups & corporates.</p>
+    </div>
+  </div>
+</section>
+
+<section id="packages">
+  <h2>Tamil Nadu Tour Packages</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220" alt="Chennai Pondicherry">
+      <h3>Chennai – Mahabalipuram – Pondicherry</h3>
+      <p>2 Days / 1 Night<br>Beach, heritage & city sightseeing.</p>
+      <div class="price">Starting from ₹7,999</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Chennai-Pondicherry%20package">Book on WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600359751434-5a64a7a3d4b4" alt="Madurai Rameswaram">
+      <h3>Madurai – Rameswaram – Kanyakumari</h3>
+      <p>3 Days / 2 Nights<br>Temple tour & spiritual journey.</p>
+      <div class="price">Starting from ₹12,999</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Madurai-Rameswaram-Kanyakumari%20package">Book on WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2" alt="Ooty">
+      <h3>Ooty – Coonoor</h3>
+      <p>3 Days / 2 Nights<br>Hill station, tea gardens & toy train.</p>
+      <div class="price">Starting from ₹11,499</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Ooty-Coonoor%20package">Book on WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600628422019-6c39c98b2d63" alt="Kodaikanal">
+      <h3>Kodaikanal</h3>
+      <p>2 Days / 1 Night<br>Nature, lakes & sightseeing.</p>
+      <div class="price">Starting from ₹8,999</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Kodaikanal%20package">Book on WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0" alt="Yercaud">
+      <h3>Yercaud</h3>
+      <p>2 Days / 1 Night<br>Peaceful hill station getaway.</p>
+      <div class="price">Starting from ₹7,499</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Yercaud%20package">Book on WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604134967494-8b2f1fbe58a3" alt="Thanjavur">
+      <h3>Thanjavur – Trichy – Chidambaram</h3>
+      <p>2 Days / 1 Night<br>Heritage & temple architecture tour.</p>
+      <div class="price">Starting from ₹9,999</div>
+      <a class="book-btn" href="https://wa.me/919500471717?text=I%20want%20to%20book%20Thanjavur-Trichy-Chidambaram%20package">Book on WhatsApp</a>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:20px;font-weight:bold;color:#1b5e20;">Custom packages available • Call or WhatsApp for best price</p>
+</section>
+
+<section id="about">
+  <h2>About Jeyam Tours and Travels</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Jeyam Tours and Travels is committed to providing safe, reliable and
+    affordable travel solutions. With well-maintained vehicles and
+    professional drivers, we ensure a pleasant journey for every customer.
+  </p>
+</section>
+
+<section id="enquiry">
+  <h2>Quick Enquiry</h2>
+  <form style="max-width:500px;margin:auto;" onsubmit="alert('Thank you! We will contact you shortly.');return false;">
+    <input required placeholder="Your Name" style="width:100%;padding:10px;margin:8px 0;" />
+    <input required placeholder="Mobile Number" style="width:100%;padding:10px;margin:8px 0;" />
+    <input placeholder="Package Interested" style="width:100%;padding:10px;margin:8px 0;" />
+    <button style="width:100%;padding:10px;background:#1b5e20;color:#fff;border:none;border-radius:5px;">Submit Enquiry</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <p><strong>Phone:</strong> 9500471717</p>
+    <p><strong>Email:</strong> info.jeyamtravels@gmail.com</p>
+    <p><strong>Available:</strong> 24/7 Service</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Jeyam Tours and Travels. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/919500471717" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 16px;border-radius:50%;text-decoration:none;font-size:20px;">💬</a>
+
+</body>
+</html>
